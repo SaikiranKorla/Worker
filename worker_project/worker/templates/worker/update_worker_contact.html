@@ -1,0 +1,7 @@
+<!-- worker/templates/worker/update_worker_contact.html -->
+<h2>Update Contact Information</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Update Contact</button>
+</form>
